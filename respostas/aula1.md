@@ -19,4 +19,4 @@ a beagle bone black ja possui a função de tarefas simultaneas e com conecção
 a Raspberry Pi.
 
 5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
-Por que esse sistema é acessivel aos alunos financeiramente, sufucuiente para o que vamos ter que desenvolver e possui um grande potencial de crescimento no mercado, para desenvolvimento de projetos.
+Por que esse sistema é acessivel financeiramente aos alunos, sufucuiente para o que vamos ter que desenvolver e possui um grande potencial de crescimento no mercado, para desenvolvimento de projetos.
