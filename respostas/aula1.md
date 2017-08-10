@@ -14,5 +14,9 @@ São sistemas que utilizam microprocessadores com sistema operacional para contr
   uma máquina de usinagem CNC automática possui um sistema embarcado que possibilita todo o seu controle operacional.
 
 4. Cite arquiteturas possíveis e as diferenças entre elas.
+O microcontrolador atmega328p pode ser usado para controlar um sistema, de forma embarcada, porém não realiza tarefas de forma simultanea e não possui internet.
+a beagle bone black ja possui a função de tarefas simultaneas e com conecção a internet, saída de vídeo entre outras.
+a Raspberry Pi.
 
 5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+Por que esse sistema é acessivel aos alunos financeiramente, sufucuiente para o que vamos ter que desenvolver e possui um grande potencial de crescimento no mercado, para desenvolvimento de projetos.
