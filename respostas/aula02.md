@@ -1,3 +1,5 @@
+# respostas - Aula 02
+
 1. Por que o Linux recebeu esse nome?
 Por conta do seu primeiro idealizador Linus Torvalds, e do nome dado à primiera versão do sistema operacional de código aberto que ele desenvolveu, chamado UNIX.
 
