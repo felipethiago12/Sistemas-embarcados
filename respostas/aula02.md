@@ -10,16 +10,20 @@ Por conta do seu primeiro idealizador Linus Torvalds, e do nome dado à primiera
 4. Por que é importante evitar executar o terminal como super-usuário?
 
 5. Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
-A tecla tab.
+A tecla tab. Se existerem mais de uma opção para completar o comando desejado, o terminal irá mostra-las para que o usuario possa escolher.
 
 6. Quais botões do teclado apresentam instruções escritas anteriormente?
 A teclas de seta direcionais para cima e para baixo.
 
 7. Apresente os respectivos comandos no terminal para:
-  (a) Obter mais informações sobre um comando.
+  (a) Obter mais informações sobre um comando. 
+  $ man "comando" 
   (b) Apresentar uma lista com os arquivos dentro de uma pasta.
+  $ ls "diretório"
   (c) Apresentar o caminho completo da pasta.
+  $ pwd
   (d) Trocar de pasta.
+  
   (e) Criar uma pasta.
   (f) Apagar arquivos definitivamente.
   (g) Apagar pastas definitivamente.
