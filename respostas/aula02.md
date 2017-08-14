@@ -18,26 +18,24 @@ A tecla tab. Se existerem mais de uma opção para completar o comando desejado,
 A teclas de seta direcionais para cima e para baixo.
 
 7. Apresente os respectivos comandos no terminal para:
-  (a) Obter mais informações sobre um comando. 
-  $ man "comando" 
-  (b) Apresentar uma lista com os arquivos dentro de uma pasta.
-  $ ls "diretório"
-  (c) Apresentar o caminho completo da pasta.
-  $ pwd
-  (d) Trocar de pasta.
-  
-  (e) Criar uma pasta.
-  (f) Apagar arquivos definitivamente.
-  (g) Apagar pastas definitivamente.
-  (h) Copiar arquivos.
-  (i) Copiar pastas.
-  (j) Mover arquivos.
-  (k) Mover pastas.
-  (l) Renomear pastas.
+  (a) Obter mais informações sobre um comando. man "comando" 
+  (b) Apresentar uma lista com os arquivos dentro de uma pasta. ls "diretório"
+  (c) Apresentar o caminho completo da pasta.  pwd
+  (d) Trocar de pasta.  cd "diretorio"
+  (e) Criar uma pasta.  mkdir "diretorio de destino + nome da pasta"
+  (f) Apagar arquivos definitivamente. rm "diretorio do arquivo"
+  (g) Apagar pastas definitivamente. rm -r "diretorio da pasta"
+  (h) Copiar arquivos. cp "diretorio origem" "diretório destino" 
+  (i) Copiar pastas. cp -r "diretorio origem" "diretório destino"
+  (j) Mover arquivos. mv "diretorio origem + arquivo" "diretório destino"
+  (k) Mover pastas. mv -r "diretorio origem + arquivo" "diretório destino"
+  (l) Renomear pastas. mv 
   (m) Apresentar o conteúdo de um arquivo.
   (n) Apresentar o tipo de um arquivo.
   (o) Limpar a tela do terminal.
+  clear
   (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
+ 
   (q) Ordenar informações em um arquivo-texto.
   (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
   (s) Conferir se dois arquivos são iguais.
