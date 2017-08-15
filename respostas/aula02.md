@@ -34,17 +34,27 @@ A teclas de seta direcionais para cima e para baixo.
  
  (h) Copiar arquivos. cp "diretorio origem" "diretório destino" 
  
- (i) Copiar pastas. cp -r "diretorio origem" "diretório destino" /n
+ (i) Copiar pastas. cp -r "diretorio origem" "diretório destino"
+ 
   (j) Mover arquivos. mv "diretorio origem + arquivo" "diretório destino"
+  
   (k) Mover pastas. mv -r "diretorio origem + arquivo" "diretório destino"
+  
   (l) Renomear pastas. mv 
+  
   (m) Apresentar o conteúdo de um arquivo.
+  
   (n) Apresentar o tipo de um arquivo.
-  (o) Limpar a tela do terminal.
-  clear
+  
+  (o) Limpar a tela do terminal.  clear
+  
   (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
  
   (q) Ordenar informações em um arquivo-texto.
+  
   (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
+  
   (s) Conferir se dois arquivos são iguais.
+  
   (t) Escrever algo na tela.
+  
