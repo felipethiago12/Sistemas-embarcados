@@ -25,11 +25,16 @@ A teclas de seta direcionais para cima e para baixo.
  (c) Apresentar o caminho completo da pasta.  pwd
  
  (d) Trocar de pasta.  cd "diretorio"
+ 
  (e) Criar uma pasta.  mkdir "diretorio de destino + nome da pasta"
+ 
  (f) Apagar arquivos definitivamente. rm "diretorio do arquivo"
+ 
  (g) Apagar pastas definitivamente. rm -r "diretorio da pasta"
+ 
  (h) Copiar arquivos. cp "diretorio origem" "diretório destino" 
- (i) Copiar pastas. cp -r "diretorio origem" "diretório destino"
+ 
+ (i) Copiar pastas. cp -r "diretorio origem" "diretório destino" /n
   (j) Mover arquivos. mv "diretorio origem + arquivo" "diretório destino"
   (k) Mover pastas. mv -r "diretorio origem + arquivo" "diretório destino"
   (l) Renomear pastas. mv 
