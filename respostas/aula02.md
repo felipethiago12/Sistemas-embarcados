@@ -30,7 +30,7 @@ A teclas de seta direcionais para cima e para baixo.
  
  (f) Apagar arquivos definitivamente. rm "diretorio do arquivo"
  
- (g) Apagar pastas definitivamente. rm -r "diretorio da pasta"
+ (g) Apagar pastas definitivamente. rmdir  "diretorio da pasta"
  
  (h) Copiar arquivos. cp "diretorio origem" "diretório destino" 
  
@@ -42,19 +42,19 @@ A teclas de seta direcionais para cima e para baixo.
   
   (l) Renomear pastas. mv 
   
-  (m) Apresentar o conteúdo de um arquivo.
+  (m) Apresentar o conteúdo de um arquivo. cat caminho do arquivo
   
-  (n) Apresentar o tipo de um arquivo.
+  (n) Apresentar o tipo de um arquivo. 
   
   (o) Limpar a tela do terminal.  clear
   
-  (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
+  (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. grep "palavra" caminho do arquivo
  
-  (q) Ordenar informações em um arquivo-texto.
+  (q) Ordenar informações em um arquivo-texto. sort -n caminho do arquivo arquivo
   
-  (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
+  (r) Substituir ocorrências de palavras-chave em um arquivo-texto. sed 's/plavra1/palavra2/g' caminho do arquivo
   
-  (s) Conferir se dois arquivos são iguais.
+  (s) Conferir se dois arquivos são iguais. diff arquivo1 arquivo2
   
-  (t) Escrever algo na tela.
+  (t) Escrever algo na tela. echo "palavra"
   
