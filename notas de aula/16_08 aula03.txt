@@ -1,0 +1,16 @@
+paramentros de entrada 
+
+executar no terminal $./reciproco.exe 2 
+
+o numero 2 é o parametro de entrada do programa reciproco
+
+como quando programos em C
+
+int main (int argc, char **argv)
+
+argc informa quantos argumentos estão sendo passados para o programa, no exemplo acima foram passados dois argumentos 
+
+argv informa o que foi passsado em forma de strigs. 
+no exemplo anterior foram passados duas strings 
+a) "./reciproco.exe" = argv[0]
+b) "2" = argv[1]
