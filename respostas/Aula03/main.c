@@ -4,10 +4,10 @@
 int main()
 {   char nome[50];
  
-    printf("Digite seu nome: ");
-    gets(nome);
+    printf("Qual seu nome: ");
+    scanf("%s",nome);
  
-    printf("O nome armazenado foi: %s", nome);
+    printf("\n Olá %s!\n", nome);
 
     return 0;
 }      
