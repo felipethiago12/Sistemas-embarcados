@@ -1,0 +1,32 @@
+Arquivos
+
+obs:
+"r" dois caracteres (r,/0)
+'r' apenas o char r
+
+"w" apaga tudo e depois começa a escrever
+"a" começa a escrever depois do ja tem no arquivo
+
+exit(1) acaba a função abruptamente // "1"  pode ser qualquer valor  inteiro
+
+ex.:
+
+FILE * abre_arq(char *n){
+       FILE* fp = fopen();
+
+os argumentos do exit e o retrun serve pra indicar o tipo de resultado obtido. se deu erro ou não.
+
+fputs(strings, pf) joga a sting direto no arquivo
+fputc(a , pf) caracter por vez
+
+fwrite escreve em arquivo
+ex.:
+float t[]={1.0,2.1,3.2}
+fwrite(t, sizeof(float), 3, fp) 
+ex2.:
+char c[]= "ola"; int n = 2;
+fprintf(fp."%s mundo %d!". c. n);
+
+&pi (endereço de pi)
+
+N=ftell(fp); tamanho do arquivo
