@@ -1,0 +1,20 @@
+pipe barra vertical
+
+cal | grep 30
+ls -l | grep mar
+
+pipe é um cano de comunicação entre os processos pai e filho 
+
+pipe cria a variavel fd[3]<-pipe
+
+entao temos quecriar primeira o pipe e depois o forkls
+ls
+
+fd[0] -> ler no arquivo
+fd[1] -> escrever no arquivog
+
+é possivel a criação de dois pipes, um do pai pro filho e outro do filho para o pai
+
+SINAIS - é uma interrupção por software 
+para o que esta fazendo e executa outra função e depois volta excutar o que estava fazendo
+
