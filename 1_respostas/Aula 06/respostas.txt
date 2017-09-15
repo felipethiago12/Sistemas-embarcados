@@ -1,0 +1,4 @@
+respostas - 06_processos_1
+
+1-a ps -aux
+b ps -g [usuario]
