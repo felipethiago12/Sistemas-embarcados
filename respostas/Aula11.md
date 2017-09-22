@@ -1,5 +1,5 @@
 
-//Respostas 11_GPIO_1.md
+#Respostas 11_GPIO_1.md
 
 1) Apresente 5 sistemas operacionais suportados pelo Raspberry Pi, e algumas de suas características.
 	a)RASPBIAN 4.9 Com interface gráfica
