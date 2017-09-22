@@ -1,20 +1,20 @@
 
 Respostas 11_GPIO_1.md
 
-1) Apresente 5 sistemas operacionais suportados pelo Raspberry Pi, e algumas de suas caracterÌsticas.
-	a)RASPBIAN 4.9 Com interface gr·fica
+1) Apresente 5 sistemas operacionais suportados pelo Raspberry Pi, e algumas de suas caracter√≠sticas.
+	a)RASPBIAN 4.9 Com interface gr√°fica
 	b)Ubunto MATE
 	c)Ubunto Core
 	d)Windows 10IOT CORE
 	e)OSMC
 
-Apresente as formas de instalaÁ„o de sistemas operacionais para o Raspberry Pi.
+Apresente as formas de instala√ß√£o de sistemas operacionais para o Raspberry Pi.
 Existem duas formas, uma instalando 
 
 Apresente 3 formas de desenvolvimento de software para o Raspberry Pi.
 
 Apresente 3 formas de acesso remoto ao Raspberry Pi.
 
-Apresente as formas possÌveis de compilaÁ„o de cÛdigo em C para o Raspberry Pi.
+Apresente as formas poss√≠veis de compila√ß√£o de c√≥digo em C para o Raspberry Pi.
 
-Apresente as formas possÌveis de compilaÁ„o de cÛdigo em Python para o Raspberry Pi.
+Apresente as formas poss√≠veis de compila√ß√£o de c√≥digo em Python para o Raspberry Pi.
