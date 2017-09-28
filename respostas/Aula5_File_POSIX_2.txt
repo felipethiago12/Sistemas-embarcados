@@ -1,0 +1,164 @@
+Para todas as questões, utilize as funções da norma POSIX (`open()`, `close()`, `write()`, `read()` e `lseek()`). Compile os códigos com o gcc e execute-os via terminal.
+
+1. Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
+________________________________________________________________
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+int main(int argc, const char * argv[])
+{
+	int fp, i;
+	char str[12]= "Ola mundo!";
+	fp = open ("Olamundo.txt", O_WRONLY);
+	if(fp==-1){
+		printf ("Erro na abertura do arquivo.\n");
+		exit (1);
+	}
+	for(i=0; str[i]; i++){
+		write(fp, &(str[i]), 1);	
+	}
+	close(fp);
+	return 0;
+}
+________________________________________________________________
+2. Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
+
+```bash
+$ ./ola_usuario_1
+$ Digite o seu nome: Eu
+$ Digite a sua idade: 30
+$ cat Eu.txt
+$ Nome: Eu
+$ Idade: 30 anos
+```
+__________________________________________________________________
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, const char * argv[])
+{
+	int fp, i;
+	char str[100]="Nome: ";
+  	char nome[50];
+	char nomeARQ[50];
+ 	char idade[10];
+
+	printf("Digite seu nome:");
+ 	scanf("%s", nome);
+ 	printf("Digite sua idade:");
+	scanf("%s", idade);
+        strcpy(nomeARQ,nome);
+	strcat(nomeARQ,".txt");
+  
+        fp = open(nomeARQ,O_WRONLY| O_CREAT, S_IRWXU);
+	if(fp==-1)
+	{
+		printf ("Erro na abertura do arquivo.\n");
+		exit (1);
+	}
+	strcat(str, nome);
+	strcat(str, "\nidade: ");
+	strcat(str, idade);
+	strcat(str," anos\n");                 
+  	write(fp,str, 100);
+	close(fp);
+
+	return 0;
+}
+____________________________________________________________________
+
+**3. Crie um código em C que recebe o nome do usuário e e sua idade como argumentos de entrada (usando as variáveis `argc` e `*argv[]`), e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_2':
+
+```bash
+$ ./ola_usuario_2 Eu 30ola_usuario_2
+$ cat Eu.txt
+$ Nome: Eu
+$ Idade: 30 anos**
+```
+_____________________________________________________________________
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, const char * argv[])
+{
+	int fp, i;
+	char str[50]="Nome: ";
+	char nomeARQ[50];
+ 
+        strcpy(nomeARQ,argv[1]);
+	strcat(nomeARQ,".txt");
+  
+        fp = open(nomeARQ,O_WRONLY| O_CREAT, S_IRWXU);
+	if(fp==-1)
+	{
+		printf ("Erro na abertura do arquivo.\n");
+		exit (1);
+	}
+	strcat(str, argv[1]);
+	strcat(str, "\nidade: ");
+	strcat(str, argv[2]);
+	strcat(str," anos\n");                 
+  	write(fp,str, 50);
+	close(fp);
+
+	return 0;
+}
+_______________________________________________________________________
+
+**4. Crie uma função que retorna o tamanho de um arquivo, usando o seguinte protótipo: `int tam_arq_texto(char *nome_arquivo);` Salve esta função em um arquivo separado chamado 'bib_arqs.c'. Salve o protótipo em um arquivo chamado 'bib_arqs.h'. Compile 'bib_arqs.c' para gerar o objeto 'bib_arqs.o'.**
+___________________________________________________________________________
+	#include <stdio.h>
+	#include <fcntl.h>
+	#include <unistd.h>
+
+	int tam_arq_texto(char *nome_arq)
+	{	int fp, tam;
+		fp = open (nome_arq, O_RDONLY)
+		tam = lseek(fp, 0, SEEK_END);
+	return tam;
+	}
+_____________________________________________________________________________
+5. Crie uma função que lê o conteúdo de um arquivo-texto e o guarda em uma string, usando o seguinte protótipo: `void le_arq_texto(char *nome_arquivo, char *conteúdo);` Repare que o conteúdo do arquivo é armazenado no vetor `conteudo[]`. Ou seja, ele é passado por referência. Salve esta função no mesmo arquivo da questão 4, chamado 'bib_arqs.c'. Salve o protótipo no arquivo 'bib_arqs.h'. Compile 'bib_arqs.c' novamente para gerar o objeto 'bib_arqs.o'.
+_____________________________________________________________________________
+	void le_arq_texto(char *nome_arq, char *conteudo)
+	{
+		int fp;
+		fp = open (nome_arq, O_RDONLY)
+		read(fp, 0, tam_arq_texto(char *nome_arq);
+	}
+_______________________________________________________________________________
+6. Crie um código em C que copia a funcionalidade básica do comando `cat`: escrever o conteúdo de um arquivo-texto no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'cat_falsificado':
+
+```bash
+$ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
+$ ./cat_falsificado ola.txt
+$ Ola mundo cruel! Ola universo ingrato!
+```
+______________________________________________________________________________
+#include <stdio.h>
+#include <stdlib.h>
+#include "bib_arqs.h"
+
+int main(int argc, char *argv[])
+{
+	char *String = (char*) malloc(tam_arq_texto(argv[1])+1);
+	le_arq_texto(argv[1], String);
+	printf("%s", String);
+	return 0;
+}
+_______________________________________________________________________________
+7. Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'busca_e_conta':
+
+```bash
+$ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
+$ ./busca_e_conta Ola ola.txt
+$ 'Ola' ocorre 2 vezes no arquivo 'ola.txt'.
+____________________________________________________
+```
