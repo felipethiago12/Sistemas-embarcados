@@ -1,0 +1,38 @@
+**1. Considerando a biblioteca-padrão da linguagem C, responda:**
+
+**(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?**
+para abrir arquivo: FILE *fopen (char *nome_do_arquivo, char *modo)
+para fechar arquivo: int fclose (FILE *ponteiro_para_arquivo);
+**(b) Quais são as funções (e seus protótipos) para escrever em arquivos?**
+FILE *fopen (char *nome_do_arquivo, "w");
+FILE *fopen (char *nome_do_arquivo, "w+");
+**(c) Quais são as funções (e seus protótipos) para ler arquivos?**
+FILE *fopen (char *nome_do_arquivo, "r");
+FILE *fopen (char *nome_do_arquivo, "r+");
+**(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?**
+FILE *fopen (char *nome_do_arquivo, "a");
+FILE *fopen (char *nome_do_arquivo, "a+");
+**(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?**
+stdio.h e stdlib.h
+
+**2. O que é a norma POSIX?**
+POSIX define a interface de programação de aplicações (API), tem o bjetivo de padronizar a criação de arquivos, de maneira que possam ser acessados por diferentes variantes do UNIX e mesmo por uotros sistemas operacionais. 
+**3. Considerando a norma POSIX, responda:**
+**(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?**
+para abrir arquivos: 
+int fd;
+fd = open(const char* caminho do arquivo, int flag de abertura);
+para fechar:
+int iStatus = close(fd);
+**(b) Quais são as funções (e seus protótipos) para escrever em arquivos?**
+open(const char* caminho do arquivo, O_WRONLY);
+open(const char* caminho do arquivo, RDWR);
+
+**(c) Quais são as funções (e seus protótipos) para ler arquivos?**
+open(const char* caminho do arquivo, O_RDONLY);
+open(const char* caminho do arquivo, RDWR);
+**(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?**
+open(const char* caminho do arquivo, O_APPEND);
+**(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?**
+unistd.h, fcntl.h, termios.h.
+
