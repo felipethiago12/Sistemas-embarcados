@@ -1,0 +1,12 @@
+Respostas - 11_GPIO_2
+
+**1. Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.**
+Utilizarei o modelo 3-B, Não escolhi esse modelo por alguma caracteristica em especial que ele possua. Mas pela facilidade em conctaa-lo a internet pelo wifi, possibilintando seu uso sem pontos de internet cabeada ou um modulo wifi adicional.
+
+**2. Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.**
+provavelmente utilizarei o RASPBIAN STRETCH LITE, versão do kernel 4.9. Pois nosso projeto não necessita de interface gráfica com usuário. porém para aprender a programas e a usar a Raspberry optei pelo RASPBIAN STRETCH, versão do kernel 4.9. Com interface gráfica, para facilitar o aprendizado.
+
+**3. Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.**
+para fazer a instalação do sitema operacional, optei por instalar o sistema por meio da imagem do sistema operacional. Acessando o link (https://www.raspberrypi.org/downloads/raspbian/) foi baixado o arquivo ".img" que deve ser emulado no cartão SD por meio do programa Win32diskmager(https://www.dropbox.com/s/ft4m7w7q6gftexz/win32diskimager-v0.9-binary.zip?dl=0).O cartão SD deve ter capacidade superior a 4Gb e formatado utilizando o softaware SD Formater (https://www.dropbox.com/s/fptx9kvfvufhbcy/SDFormatterv4.zip?dl=0)antes de realizar o processo de instalação.
+
+**4. Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.**
