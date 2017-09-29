@@ -32,13 +32,18 @@ sim, basta criar um processo antes, com a função create_process("nome");
 
 **(a) `execp()`?**
 Está função irá buscar a nova imagem do processo nos diretórios contidos na variável PATH.
+
 **(b) `execv()`?**
  Os argumentos que serão recebidos em argv são passados em um vetor do tipo char* que já contém todas as strings previamente carregadas.
+ 
 **(c) `exece()`?**
 O último parâmetro destas funções é um vetor para strings (char *) que será recebido pelo novo programa no argumento envp contendo variáveis de ambiente pertinentes para sua execução.
+
 **(d) `execvp()`?**
 bPara as versões sem a letra “p“, deverá ser passada uma string contendo o caminho completo para o arquivo executável. A letra “p“, representa que o pedido ser passado uma string contendo o caminho completo para o arquivo executável.
+
 **(e) `execve()`?**
 Os argumentos que serão recebidos em argv são passados em um vetor do tipo char* que já contém todas as strings previamente carregadas. e representa variável externa. 
+
 **(f) `execle()`?**
-Os argumentos que serão recebidos em argv são listados um a um como parâmetros da função em forma de string. Para as versões sem a letra “e“, o ambiente é adquirido a partir de uma variável externa (extern char **environ) já declarada na biblioteca unistd.h.
+Os argumentos que serão recebidos em argv são listados um a um como parâmetros da função em forma de string. e representa variável externa. 
