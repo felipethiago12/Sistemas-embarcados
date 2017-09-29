@@ -1,17 +1,17 @@
 **1. Como se utiliza o comando `ps` para:**
 
 **(a) Mostrar todos os processos rodando na máquina?**
- $ps -e
+$ps -e
 **(b) Mostrar os processos de um usuário?**
- $ps -U "usuario"
+$ps -U "usuario"
 **(c) Ordenar todos os processos de acordo com o uso da CPU?**
- $ps aux --sort=-pcpu
-(d) Mostrar a quanto tempo cada processo está rodando?
+$ps aux --sort=-pcpu
+**(d) Mostrar a quanto tempo cada processo está rodando?**
  $ps -e -o time
-2. De onde vem o nome `fork()`?
+**2. De onde vem o nome `fork()`?**
 Origina da palavra Fork que em português significa forquilha, ou bifurcação. 
 
-3. Quais são as vantagens e desvantagens em utilizar:
+**3. Quais são as vantagens e desvantagens em utilizar:**
 
 (a) `system()`?
 é um comando muito prático, pois executa um comando direto no terminal. podendo assim usarmos diversos comandos ja conhecidos para trabalhar. O problema que ele inicia um novo processo e dependendo do que estiver rodando na maquina ela pode ficar lenta.
