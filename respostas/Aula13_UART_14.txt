@@ -1,17 +1,17 @@
-Cite as vantagens e desvantagens das comunicaÁ„o serial:
-(a) AssÌncrona (UART).
-vantagem: Protocolo Simplificado e È full-duplex.
-desvantagem: se comunica com apenas um dispositivo.
+Cite as vantagens e desvantagens das comunica√ß√£o serial:
+(a) Ass√≠ncrona (UART).
+vantagem: Protocolo Simplificado e √© full-duplex.
+desvantagem: pelo fato do clock n√£o ser sincrono, a comunica√ß√£o √© lenta.
 (b) SPI.
-vantagem: ela È full-duplex envia e recebe ao mesmo tempo e se comunica com v·rios dispositivos. 
-desvantagem: 
+vantagem: ela √© full-duplex envia e recebe ao mesmo tempo e se comunica com v√°rios dispositivos. 
+desvantagem: possui mais fios que a i2c.
         
-Considere o caso em que a Raspberry Pi deve receber leituras analÛgico/digitais de um MSP430, e que a comunicaÁ„o entre os dois È UART.
-… tecnicamente possÌvel que o MSP430 mande os resultados da convers„o A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quÍ?
+Considere o caso em que a Raspberry Pi deve receber leituras anal√≥gico/digitais de um MSP430, e que a comunica√ß√£o entre os dois √© UART.
+√â tecnicamente poss√≠vel que o MSP430 mande os resultados da convers√£o A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por qu√™?
 
-Considere o caso em que a Raspberry Pi deve receber leituras analÛgico/digitais de um MSP430, que a comunicaÁ„o entre os dois seja SPI, e que o MSP430 seja o escravo. 
-… tecnicamente possÌvel que o MSP430 mande os resultados da convers„o A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quÍ?
+Considere o caso em que a Raspberry Pi deve receber leituras anal√≥gico/digitais de um MSP430, que a comunica√ß√£o entre os dois seja SPI, e que o MSP430 seja o escravo. 
+√â tecnicamente poss√≠vel que o MSP430 mande os resultados da convers√£o A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por qu√™?
 
-Se o Raspberry Pi tiver de se comunicar com dois dispositivos via UART, como executar a comunicaÁ„o com o segundo dispositivo?
+Se o Raspberry Pi tiver de se comunicar com dois dispositivos via UART, como executar a comunica√ß√£o com o segundo dispositivo?
 
-Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicaÁ„o com o segundo dispositivo?
+Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunica√ß√£o com o segundo dispositivo?
