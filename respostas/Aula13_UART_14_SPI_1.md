@@ -1,7 +1,7 @@
 **Cite as vantagens e desvantagens das comunicação serial:
 (a) Assíncrona (UART).**
 vantagem: Protocolo Simplificado e é full-duplex.
-desvantagem: pelo fato do clock não ser sincrono, a comunicação é lenta, a comunicação acontece apenas entre dois dispositivos.
+desvantagem: pelo fato do clock não ser sincrono, a comunicação é lenta.
 **(b) SPI.**
 vantagem: ela é full-duplex envia e recebe, é possivel envia a mesma mensagem para todos os escravos ao mesmo tempo. 
 desvantagem: um fio adicional para cada escravo, ou se usarmos a configuração Daisy chain a comunicação fica mais lenta, pois a mensagem tem que passar por escravos intermediários até chegar ao escravo destino.
@@ -13,5 +13,6 @@ O MSP430 pode enviar a qualquer momento as informações bastando apenas iniciar
 Não é possivel, pois quem controla o fluxo de informações é o mestre apartir do clock.
 
 **Se o Raspberry Pi tiver de se comunicar com dois dispositivos via UART, como executar a comunicação com o segundo dispositivo?**
-
+apos o envio dos oito bits de informação existe outro bit chamado Ad que serve para o mestre informar para os escravos se aqueles bits enviados são endereço ou informação, nesse caso a sequencia seria:
+endereco do dispositivo 1 mensagem endereço do dispositivo 2 e mensagem.
 **Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicação com o segundo dispositivo?**
