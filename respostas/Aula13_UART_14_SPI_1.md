@@ -16,3 +16,4 @@ Não é possivel, pois quem controla o fluxo de informações é o mestre aparti
 apos o envio dos oito bits de informação existe outro bit chamado Ad que serve para o mestre informar para os escravos se aqueles bits enviados são endereço ou informação, nesse caso a sequencia seria:
 endereco do dispositivo 1 mensagem endereço do dispositivo 2 e mensagem.
 **Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicação com o segundo dispositivo?**
+Na comunicação SPI para que o mestre se comunique com mais de um dispositivo existe um quarto fio que envia o endereço do escravo. todos os dispositivos se conectam ao fio de endereço e apenas recebe a mensagem o dispositivo referente ao endereço da linha.
